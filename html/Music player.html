@@ -1,11 +1,13 @@
+"Warning":
+Make sure that you have named your song and img same!
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player By Rizan</title>
-    <link rel="stylesheet" href="D:\HTML\My Works\Music Player\css\style.5.css">
-    <link rel="icon" href="D:/HTML/MyWebsite/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,19 +15,19 @@
 <body>
     <div class="main_div">
         <div class="music_container">
-            <h2 id="title">One Dance</h2>
-            <h3 id="artist">Drake ft.Wizkid & Kyla</h3>
+            <h2 id="title">(song name)</h2>
+            <h3 id="artist">(artist name)</h3>
             <div class="img_container">
-               <img src="D:\HTML\My Works\Music Player\img\song-1.jpg" alt="">
+               <img src="(img location)" alt="">
             </div>
-            <audio src="D:\HTML\My Works\Music Player\music\song-1.mp3"></audio>
+            <audio src="(song location)"></audio>
 
             <!--Progress Bar-->
 
             <div class="progressbar_container" id="progress_container">
                 <div class="progress_duration_meter">
                     <div id="current_time" style="color: white;">0:00</div>
-                    <div id="duration" style="color: white;">2:55</div>
+                    <div id="duration" style="color: white;">(song max.duration)</div>
                 </div>
                 <div class="progress_div" id="progress_div">
                     <div class="progress" id="progress"></div>
@@ -60,19 +62,19 @@
 
             const songs = [
                 {
-                    name: "song-1",
-                    title: "One Dance",
-                    artist: "Drake ft.Wizkid & Kyla",
+                    name: "(enter the img name which should be same as the song)",
+                    title: "",
+                    artist: "",
                 },
                 {
-                    name: "song-2",
-                    title: "Lucid Dreams",
-                    artist: "Juice Wrld",
+                    name: "(enter the img name which should be same as the song)",
+                    title: "",
+                    artist: "",
                 },
                 {
-                    name: "song-3",
-                    title: "Ransom",
-                    artist: "Lil Tecca",
+                    name: "(enter the img name which should be same as the song)",
+                    title: "",
+                    artist: "",
                 },
 
             ];
@@ -108,8 +110,8 @@
             const loadSong = (songs) => {
                 title.textContent = songs.title;
                 artist.textContent = songs.artist;
-                music.src = "D:/HTML/My Works/Music Player/music/" + songs.name + ".mp3";
-                img.src = "D:/HTML/My Works/Music Player/img/" + songs.name + ".jpg";
+                music.src = "(song location)" + songs.name + ".mp3";
+                img.src = "(img location)" + songs.name + ".jpg";
             };
 
             songIndex = 0;
@@ -180,8 +182,6 @@
             prev.addEventListener("click", prevSong);
 
     </script>
-    
-
-    <script src="D:\HTML\My Works\Music Player\js\index5.js"></script>
+    *Visit my Website rizanabdulsalam.in*
 </body>
 </html>
